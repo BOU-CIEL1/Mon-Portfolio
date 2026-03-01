@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Portfolio - Accueil</title>
     <link rel="icon" href="../images/pp lilaj.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="entete" id="entete">
       <img src="../images/pp lilaj.jpg" class="logo" />
-      <p>Mon Portfolio</p>
+      <h1 class="titre">Mon Portfolio</h1>
       <nav class="barre-nav" id="barre-nav">
         <a href="index.html">
           <span>Accueil</span>
@@ -31,10 +31,11 @@
     </header>
 
     <main>
+      <hr/>
       <section class="accueil" id="accueil">
         <h1>Jalil BOUGOFFA--DUPRAT</h1>
         <h2>Développeur Informatique</h2>
-        <article class="accueil" id="bio">
+        <article class="bio" id="bio">
           <h3>A propos de moi</h3>
           <p>Admis en Bachelor 3 Informatique - Développement à Ynov Campus Lyon, je suis un grand passionné de jeux vidéo.
             <br/>
@@ -46,30 +47,54 @@
         </figure>
 
         <div class="reseaux-sociaux" id="reseaux-sociaux">
-          <a href="https://www.linkedin.com/in/jalil-bougoffa-duprat-845b202a0/" target="_blank">
-            <img src="../images/Linkedin.png" alt="Profil LinkedIn de Jalil" loading="lazy" />
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com/BOU-CIEL1" target="_blank">
-            <img src="../images/github.png" alt="Profil GitHub de Jalil" loading="lazy" />
-            <span>GitHub</span>
-          </a>
-          <a href="https://www.youtube.com/@lilajofficiel" target="_blank">
-            <img src="../images/youtube.png" alt="Chaîne YouTube de Jalil" loading="lazy" />
-            <span>YouTube</span>
-          </a>
-          <a href="https://www.instagram.com/lilaj_officiel/#" target="_blank">
-            <img src="../images/instagram.png" alt="Compte Instagram de Jalil" loading="lazy" />
-            <span>Instagram</span>
-          </a>
-          <a href="https://discord.com/users/817797721146523730" target="_blank">
-            <img src="../images/discord.png" alt="Profil Discord de Jalil" loading="lazy" />
-            <span>Discord</span>
-          </a>
-          <a href="https://x.com/Lilaj_officiel" target="_blank">
-            <img src="../images/twitter.png" alt="Profil Discord de Jalil" loading="lazy" />
-            <span>Twitter</span>
-          </a>
+          <div class="reseaux-card" id="linkedin">
+            <a href="https://www.linkedin.com/in/jalil-bougoffa-duprat-845b202a0/" target="_blank">
+              <button>
+              <img src="../images/Linkedin.png" alt="Profil LinkedIn de Jalil" loading="lazy" />
+              <span>LinkedIn</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="gitHub">
+            <a href="https://github.com/BOU-CIEL1" target="_blank">
+              <button>
+              <img src="../images/github.png" alt="Profil GitHub de Jalil" loading="lazy" />
+              <span>GitHub</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="youTube">
+            <a href="https://www.youtube.com/@lilajofficiel" target="_blank">
+              <button>
+              <img src="../images/youtube.png" alt="Chaîne YouTube de Jalil" loading="lazy" />
+              <span>YouTube</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="instagram">
+            <a href="https://www.instagram.com/lilaj_officiel/#" target="_blank">
+              <button>
+              <img src="../images/instagram.png" alt="Compte Instagram de Jalil" loading="lazy" />
+              <span>Instagram</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="discord">
+            <a href="https://discord.com/users/817797721146523730" target="_blank">
+              <button>
+              <img src="../images/discord.png" alt="Profil Discord de Jalil" loading="lazy" />
+              <span>Discord</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="twitter">
+            <a href="https://x.com/Lilaj_officiel" target="_blank">
+              <button>
+              <img src="../images/twitter.png" alt="Compte Twitter/X de Jalil" loading="lazy" />
+              <span>Twitter</span>
+              </button>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -137,19 +162,19 @@
 
       <section class="selected-projects" id="selected-projects">
         <h2>Projets Sélectionnés</h2>
-        <div class="selected-projects" id="selected-project-1">
+        <div class="project-card" id="project-card-1">
           <img src="../images/caption-spacecheap-adventures.png" alt="Image Projet 1"/>
           <h3>Spacecheap Adventures</h3>
           <p>Godot - GDScript</p>
           <p></p>
         </div>
-        <div class="selected-projects" id="selected-project-2">
+        <div class="project-card" id="project-card-2">
           <img src="" alt="Image Projet 2"/>
           <h3>Chronomètre et IHM Spectateurs Course CoVACIEL</h3>
           <p>C++ - HTML - CSS - JS - PHP</p>
           <p></p>
         </div>
-        <div class="selected-projects" id="selected-project-3">
+        <div class="project-card" id="project-card-3">
           <img src="" alt="Image Projet 3"/>
           <h3>Jeu Trouver Nombre Mystère</h3>
           <p>HTML - CSS - JS</p>
@@ -159,17 +184,17 @@
 
       <section class="selected-courses" id="selected-courses">
         <h2>Cours Sélectionnés</h2>
-        <div class="selected-courses" id="selected-courses-1">
+        <div class="course-card" id="course-card-1">
           <img src="../images/unity-junior-programmer.png" alt="Image Cours 1"/>
           <h3>Unity Junior Programmer</h3>
           <p></p>
         </div>
-        <div class="selected-courses" id="selected-courses-2">
+        <div class="course-card" id="course-card-2">
           <img src="../images/Sololearn - Web Development.png" alt="Image Cours 2"/>
           <h3>Sololearn - Web Development</h3>
           <p></p>
         </div>
-        <div class="selected-courses" id="selected-courses-3">
+        <div class="course-card" id="course-card-3">
           <img src="../images/Sololearn - Python Developer.png" alt="Image Cours 3"/>
           <h3>Sololearn - Python Developer</h3>
           <p></p>

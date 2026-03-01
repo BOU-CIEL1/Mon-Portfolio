@@ -1,0 +1,47 @@
+body
+{
+  background: linear-gradient(45deg, #11131F, #141726);
+  color: #3E63DD;
+  font-family: "Inter", "Monsterrat", "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4
+{
+  font-family: "Oswald", "Open Sans", "Arial", sans-serif;
+}
+
+a
+{
+  color: #9EB1FF;
+}
+
+header{
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1D2E62;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+}
+
+header > nav{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  font-size: 20px;
+}
+
+header > nav > a{
+  text-decoration: none;
+}
+
+.reseaux-sociaux img{
+  height:5%;
+  width:5%;
+}
