@@ -184,13 +184,13 @@ button span {
 #icon-en::before{background-image: url(../images/flag-en.png);}
 #icon-de::before{background-image: url(../images/flag-de.png);}
 
-.liste-projets{
+.liste-projets, .liste-cours{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.project-card{
+.project-card, .course-card{
   height: 500px;
   width: 500px;
   border: solid 4px #304384;
@@ -199,13 +199,18 @@ button span {
   cursor: pointer;
 }
 
-.project-card img{
+.course-card{
+  width: 425px;
+}
+
+.project-card img, .course-card img{
   max-height: 300px;
+  min-width: 425px;
   max-width: 500px;
   object-fit: cover;
   border-bottom: solid #304384;
 }
 
-.project-card h3, .project-card p{
+.project-card h3, .project-card p, .course-card h3, .course-card p{
   padding: 0px 10px;
 }
