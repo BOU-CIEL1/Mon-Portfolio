@@ -11,6 +11,15 @@ h4 {
   font-family: "Oswald", "Open Sans", "Arial", sans-serif;
 }
 
+h2{
+  text-align: center;
+}
+
+p{
+  font-size: 18px;
+  line-height: 180%;
+}
+
 a {
   color: #9eb1ff;
 }
@@ -120,3 +129,56 @@ button span {
   margin-top: 20px;
   margin-right: 210px;
 }
+
+.liste-competences {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 115%;
+}
+
+.competences ul{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.competences li{
+  text-align: left;
+  width: 100%;
+}
+
+.competences li:before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+#icon-cpp::before{background-image: url(../images/cpp.svg);}
+#icon-csharp::before{background-image: url(../images/c-sharp.svg);}
+#icon-python::before{background-image: url(../images/python.svg);}
+#icon-html::before{background-image: url(../images/html.svg);}
+#icon-css::before{background-image: url(../images/css.svg);}
+#icon-js::before{background-image: url(../images/javascript.svg);}
+#icon-php::before{background-image: url(../images/php.svg);}
+#icon-sql::before{background-image: url(../images/mysql.svg);}
+#icon-unity::before{background-image: url(../images/unity.svg);}
+#icon-godot::before{background-image: url(../images/godot.svg);}
+#icon-github::before{background-image: url(../images/github.svg);}
+#icon-gitlab::before{background-image: url(../images/gitlab.svg);}
+#icon-docker::before{background-image: url(../images/docker.svg);}
+#icon-uml::before{background-image: url(../images/uml.svg);}
+#icon-premiere-pro::before{background-image: url(../images/premiere-pro.svg);}
+#icon-photoshop::before{background-image: url(../images/photoshop.svg);}
+#icon-fr::before{background-image: url(../images/flag-fr.png);}
+#icon-en::before{background-image: url(../images/flag-en.png);}
+#icon-de::before{background-image: url(../images/flag-de.png);}
