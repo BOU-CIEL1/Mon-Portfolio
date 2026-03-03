@@ -11,7 +11,7 @@ h4 {
   font-family: "Oswald", "Open Sans", "Arial", sans-serif;
 }
 
-index.html > h2 {
+h2 {
   text-align: center;
 }
 
@@ -286,6 +286,7 @@ button span {
 .ecole h2,
 .job h2 {
   font-size: 2.5rem;
+  text-align: left;
 }
 
 .ecole h3,
