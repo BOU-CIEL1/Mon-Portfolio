@@ -11,11 +11,11 @@ h4 {
   font-family: "Oswald", "Open Sans", "Arial", sans-serif;
 }
 
-h2{
+index.html > h2 {
   text-align: center;
 }
 
-p{
+p {
   font-size: 18px;
   line-height: 180%;
 }
@@ -52,6 +52,8 @@ header > nav > a,
 .liste-projets > a {
   text-decoration: none;
 }
+
+/* Page Accueil*/
 
 .accueil {
   display: flex;
@@ -138,7 +140,7 @@ button span {
   font-size: 115%;
 }
 
-.competences ul{
+.competences ul {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
@@ -148,12 +150,12 @@ button span {
   gap: 10px;
 }
 
-.competences li{
+.competences li {
   text-align: left;
   width: 100%;
 }
 
-.competences li:before{
+.competences li:before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -164,33 +166,73 @@ button span {
   vertical-align: middle;
 }
 
-#icon-cpp::before{background-image: url(../images/cpp.svg);}
-#icon-csharp::before{background-image: url(../images/c-sharp.svg);}
-#icon-python::before{background-image: url(../images/python.svg);}
-#icon-html::before{background-image: url(../images/html.svg);}
-#icon-css::before{background-image: url(../images/css.svg);}
-#icon-js::before{background-image: url(../images/javascript.svg);}
-#icon-php::before{background-image: url(../images/php.svg);}
-#icon-sql::before{background-image: url(../images/mysql.svg);}
-#icon-unity::before{background-image: url(../images/unity.svg);}
-#icon-godot::before{background-image: url(../images/godot.svg);}
-#icon-github::before{background-image: url(../images/github.svg);}
-#icon-gitlab::before{background-image: url(../images/gitlab.svg);}
-#icon-docker::before{background-image: url(../images/docker.svg);}
-#icon-uml::before{background-image: url(../images/uml.svg);}
-#icon-premiere-pro::before{background-image: url(../images/premiere-pro.svg);}
-#icon-photoshop::before{background-image: url(../images/photoshop.svg);}
-#icon-fr::before{background-image: url(../images/flag-fr.png);}
-#icon-en::before{background-image: url(../images/flag-en.png);}
-#icon-de::before{background-image: url(../images/flag-de.png);}
+#icon-cpp::before {
+  background-image: url(../images/cpp.svg);
+}
+#icon-csharp::before {
+  background-image: url(../images/c-sharp.svg);
+}
+#icon-python::before {
+  background-image: url(../images/python.svg);
+}
+#icon-html::before {
+  background-image: url(../images/html.svg);
+}
+#icon-css::before {
+  background-image: url(../images/css.svg);
+}
+#icon-js::before {
+  background-image: url(../images/javascript.svg);
+}
+#icon-php::before {
+  background-image: url(../images/php.svg);
+}
+#icon-sql::before {
+  background-image: url(../images/mysql.svg);
+}
+#icon-unity::before {
+  background-image: url(../images/unity.svg);
+}
+#icon-godot::before {
+  background-image: url(../images/godot.svg);
+}
+#icon-github::before {
+  background-image: url(../images/github.svg);
+}
+#icon-gitlab::before {
+  background-image: url(../images/gitlab.svg);
+}
+#icon-docker::before {
+  background-image: url(../images/docker.svg);
+}
+#icon-uml::before {
+  background-image: url(../images/uml.svg);
+}
+#icon-premiere-pro::before {
+  background-image: url(../images/premiere-pro.svg);
+}
+#icon-photoshop::before {
+  background-image: url(../images/photoshop.svg);
+}
+#icon-fr::before {
+  background-image: url(../images/flag-fr.png);
+}
+#icon-en::before {
+  background-image: url(../images/flag-en.png);
+}
+#icon-de::before {
+  background-image: url(../images/flag-de.png);
+}
 
-.liste-projets, .liste-cours{
+.liste-projets,
+.liste-cours {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.project-card, .course-card{
+.project-card,
+.course-card {
   height: 500px;
   width: 500px;
   border: solid 4px #304384;
@@ -199,11 +241,12 @@ button span {
   cursor: pointer;
 }
 
-.course-card{
+.course-card {
   width: 425px;
 }
 
-.project-card img, .course-card img{
+.project-card img,
+.course-card img {
   max-height: 300px;
   min-width: 425px;
   max-width: 500px;
@@ -211,6 +254,78 @@ button span {
   border-bottom: solid #304384;
 }
 
-.project-card h3, .project-card p, .course-card h3, .course-card p{
+.project-card h3,
+.project-card p,
+.course-card h3,
+.course-card p {
   padding: 0px 10px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Page Formations*/
+
+.ecole{
+  padding: 10px 10px 10px 20px;
+  margin: 10px;
+  line-height: 100%;
+  position: relative;
+  margin: 0px 0px 0px 20px;
+  border-left: 2px solid #2870BD;
+}
+
+.ecole .autre-image{
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.ecole h2{
+  font-size: 2.5rem;
+}
+
+.ecole h3{
+  font-size: 1.5rem;
+}
+
+.ecole::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 40px;
+  width: 20px;
+  height: 20px;
+  background-color: #2870BD;
+  border: 3px solid #104D87;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#branly::before{
+  top: 42px;
+}
+
+#martiniere-monplaisir::before{
+  top: 50px;
+}
+
+#logo-branly {
+  position: relative;
+  top: -40px;
+}
+
+.infos-ecole {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.logo-ecole {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 300px;
+  max-height: 300px;
+  max-width: 300px;
 }
