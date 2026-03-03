@@ -262,48 +262,56 @@ button span {
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* Page Formations*/
+/* Page Formations et Page Expériences Professionnelles*/
 
-.ecole{
+.ecole,
+.job {
   padding: 10px 10px 10px 20px;
   margin: 10px;
   line-height: 100%;
   position: relative;
   margin: 0px 0px 0px 20px;
-  border-left: 2px solid #2870BD;
+  border-left: 2px solid #2870bd;
 }
 
-.ecole .autre-image{
+.job{
+  line-height: 150%;
+}
+
+.ecole .autre-image {
   max-height: 150px;
   max-width: 150px;
 }
 
-.ecole h2{
+.ecole h2,
+.job h2 {
   font-size: 2.5rem;
 }
 
-.ecole h3{
+.ecole h3,
+.job h3 {
   font-size: 1.5rem;
 }
 
-.ecole::before {
+.ecole::before,
+.job::before {
   content: "";
   position: absolute;
   left: -14px;
   top: 40px;
   width: 20px;
   height: 20px;
-  background-color: #2870BD;
-  border: 3px solid #104D87;
+  background-color: #2870bd;
+  border: 3px solid #104d87;
   border-radius: 50%;
   z-index: 1;
 }
 
-#branly::before{
+#branly::before {
   top: 42px;
 }
 
-#martiniere-monplaisir::before{
+#martiniere-monplaisir::before {
   top: 50px;
 }
 
@@ -312,7 +320,11 @@ button span {
   top: -40px;
 }
 
-.infos-ecole {
+#tic-fhans::before{
+  top: 90px;
+}
+
+.infos-ecole, .infos-job{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -321,11 +333,24 @@ button span {
   margin-bottom: 100px;
 }
 
-.logo-ecole {
+.logo-ecole, .logo-job{
   display: flex;
   flex: 1;
   justify-content: flex-end;
   margin-right: 300px;
   max-height: 300px;
   max-width: 300px;
+}
+
+#img-site-tic-fhans{
+  display: flex;
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 500px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+
+.titre-liste{
+  font-size: 1.2rem;
 }
