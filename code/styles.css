@@ -53,7 +53,7 @@ header > nav > a,
   text-decoration: none;
 }
 
-/* Page Accueil*/
+/* Page Accueil et Page*/
 
 .accueil {
   display: flex;
@@ -225,40 +225,81 @@ button span {
 }
 
 .liste-projets,
-.liste-cours {
+.liste-cours, .certifs {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
+.certifs{
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .project-card,
-.course-card {
+.course-card,
+.certifs-card {
   height: 500px;
   width: 500px;
   border: solid 4px #304384;
   border-radius: 6px;
   margin: 10px;
+}
+
+.project-card {
   cursor: pointer;
 }
 
-.course-card {
+.course-card, .certifs-card {
   width: 425px;
 }
 
+.certifs-card{
+  display: flex;
+  flex-direction: column;
+}
+
 .project-card img,
-.course-card img {
+.course-card img,
+.certifs-card img {
   max-height: 300px;
-  min-width: 425px;
-  max-width: 500px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   object-fit: cover;
+}
+
+.certifs-card figure{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.project-card img, .course-card img{
   border-bottom: solid #304384;
+}
+
+.certifs-card img{
+  border-top: solid #304384;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project-card h3,
 .project-card p,
 .course-card h3,
-.course-card p {
+.course-card p,
+.certifs-card h3,
+.certifs-card h4,
+.certifs-card p {
   padding: 0px 10px;
+}
+
+#page-certifs p{
+  line-height: 60%;
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -274,7 +315,7 @@ button span {
   border-left: 2px solid #2870bd;
 }
 
-.job{
+.job {
   line-height: 150%;
 }
 
@@ -321,11 +362,12 @@ button span {
   top: -40px;
 }
 
-#tic-fhans::before{
+#tic-fhans::before {
   top: 90px;
 }
 
-.infos-ecole, .infos-job{
+.infos-ecole,
+.infos-job {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -334,7 +376,8 @@ button span {
   margin-bottom: 100px;
 }
 
-.logo-ecole, .logo-job{
+.logo-ecole,
+.logo-job {
   display: flex;
   flex: 1;
   justify-content: flex-end;
@@ -343,7 +386,7 @@ button span {
   max-width: 300px;
 }
 
-#img-site-tic-fhans{
+#img-site-tic-fhans {
   display: flex;
   min-height: 100px;
   min-width: 100px;
@@ -352,6 +395,7 @@ button span {
   padding: 10px 0px;
 }
 
-.titre-liste{
+.titre-liste {
   font-size: 1.2rem;
 }
+
