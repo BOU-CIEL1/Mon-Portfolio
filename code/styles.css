@@ -248,6 +248,7 @@ button span {
 
 .project-card {
   cursor: pointer;
+  height: 600px;
 }
 
 .course-card, .certifs-card {
