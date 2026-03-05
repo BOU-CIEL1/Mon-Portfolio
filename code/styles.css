@@ -49,7 +49,7 @@ header > nav {
 
 header > nav > a,
 .reseaux-card > a,
-.liste-projets > a {
+.liste-projets > a, .projets  a {
   text-decoration: none;
 }
 
@@ -225,20 +225,24 @@ button span {
 }
 
 .liste-projets,
-.liste-cours, .certifs {
+.liste-cours,
+.certifs,
+.projets {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.certifs{
+.certifs,
+.projets {
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .project-card,
 .course-card,
-.certifs-card {
+.certifs-card,
+.projets-card {
   height: 500px;
   width: 500px;
   border: solid 4px #304384;
@@ -246,23 +250,27 @@ button span {
   margin: 10px;
 }
 
-.project-card {
+.project-card,
+.projets-card {
   cursor: pointer;
-  height: 600px;
+  height: auto;
 }
 
-.course-card, .certifs-card {
+.course-card,
+.certifs-card {
   width: 425px;
 }
 
-.certifs-card{
+.certifs-card,
+.projets-card {
   display: flex;
   flex-direction: column;
 }
 
 .project-card img,
 .course-card img,
-.certifs-card img {
+.certifs-card img,
+.projets-card img {
   max-height: 300px;
   width: 100%;
   max-width: 100%;
@@ -270,7 +278,8 @@ button span {
   object-fit: cover;
 }
 
-.certifs-card figure{
+.certifs-card figure,
+.projets-card figure {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -278,15 +287,18 @@ button span {
   overflow: hidden;
 }
 
-.project-card img, .course-card img{
+.project-card img,
+.course-card img {
   border-bottom: solid #304384;
 }
 
-.certifs-card img{
+.certifs-card img,
+.projets-card img {
   border-top: solid #304384;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
 }
 
 .project-card h3,
@@ -295,11 +307,17 @@ button span {
 .course-card p,
 .certifs-card h3,
 .certifs-card h4,
-.certifs-card p {
+.certifs-card p,
+.projets-card h3,
+.projets-card p {
   padding: 0px 10px;
 }
 
-#page-certifs p{
+.description{
+  font-size: 0.8rem;
+}
+
+#page-certifs p {
   line-height: 60%;
 }
 
@@ -387,7 +405,8 @@ button span {
   max-width: 300px;
 }
 
-.ecole ul, .ecole li{
+.ecole ul,
+.ecole li {
   line-height: 150%;
   font-size: 1.2rem;
 }
@@ -404,4 +423,3 @@ button span {
 .titre-liste {
   font-size: 1.2rem;
 }
-
