@@ -167,61 +167,61 @@ button span {
 }
 
 #icon-cpp::before {
-  background-image: url(./images/cpp.svg);
+  background-image: url(/images/cpp.svg);
 }
 #icon-csharp::before {
-  background-image: url(./images/c-sharp.svg);
+  background-image: url(/images/c-sharp.svg);
 }
 #icon-python::before {
-  background-image: url(./images/python.svg);
+  background-image: url(/images/python.svg);
 }
 #icon-html::before {
-  background-image: url(./images/html.svg);
+  background-image: url(/images/html.svg);
 }
 #icon-css::before {
-  background-image: url(./images/css.svg);
+  background-image: url(/images/css.svg);
 }
 #icon-js::before {
-  background-image: url(./images/javascript.svg);
+  background-image: url(/images/javascript.svg);
 }
 #icon-php::before {
-  background-image: url(./images/php.svg);
+  background-image: url(/images/php.svg);
 }
 #icon-sql::before {
-  background-image: url(./images/mysql.svg);
+  background-image: url(/images/mysql.svg);
 }
 #icon-unity::before {
-  background-image: url(./images/unity.svg);
+  background-image: url(/images/unity.svg);
 }
 #icon-godot::before {
-  background-image: url(./images/godot.svg);
+  background-image: url(/images/godot.svg);
 }
 #icon-github::before {
-  background-image: url(./images/github.svg);
+  background-image: url(/images/github.svg);
 }
 #icon-gitlab::before {
-  background-image: url(./images/gitlab.svg);
+  background-image: url(/images/gitlab.svg);
 }
 #icon-docker::before {
-  background-image: url(./images/docker.svg);
+  background-image: url(/images/docker.svg);
 }
 #icon-uml::before {
-  background-image: url(./images/uml.svg);
+  background-image: url(/images/uml.svg);
 }
 #icon-premiere-pro::before {
-  background-image: url(./images/premiere-pro.svg);
+  background-image: url(/images/premiere-pro.svg);
 }
 #icon-photoshop::before {
-  background-image: url(./images/photoshop.svg);
+  background-image: url(/images/photoshop.svg);
 }
 #icon-fr::before {
-  background-image: url(./images/flag-fr.png);
+  background-image: url(/images/flag-fr.png);
 }
 #icon-en::before {
-  background-image: url(./images/flag-en.png);
+  background-image: url(/images/flag-en.png);
 }
 #icon-de::before {
-  background-image: url(./images/flag-de.png);
+  background-image: url(/images/flag-de.png);
 }
 
 .liste-projets,
