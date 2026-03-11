@@ -5,11 +5,11 @@
 4. Mettre du focus sur certains éléments
 */
 
-const toggle = document.getElementById('toggle');
+const toggleLightDark = document.getElementById('toggle-light-dark');
 const body = document.body;
 
-toggle.addEventListener('change', () => {
-    if(toggle.checked) {
+toggleLightDark.addEventListener('change', () => {
+    if(toggleLightDark.checked) {
         document.body.classList.remove('light-mode');
     } else {
         document.body.classList.add('light-mode');

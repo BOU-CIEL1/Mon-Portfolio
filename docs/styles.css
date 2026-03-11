@@ -63,12 +63,12 @@ header > input {
   transition: 0.5s;
 }
 
-#toggle {
+#toggle-light-dark {
   display: none;
 }
 
 /* Le conteneur (le rail du bouton) */
-.toggle-label {
+.toggle-light-dark-label {
   width: 80px;
   height: 40px;
   background-color: #f3f3f3; /* Couleur sombre par défaut */
@@ -117,31 +117,31 @@ header > input {
 /* --- ETATS QUAND COCHÉ (Light Mode) --- */
 
 /* Déplacement du cercle */
-#toggle:checked + .toggle-label .circle {
+#toggle-light-dark:checked + .toggle-light-dark-label .circle {
   left: calc(100% - 36px);
   background-color: #fff;
 }
 
 /* Changement de couleur du rail */
-#toggle:checked + .toggle-label {
+#toggle-light-dark:checked + .toggle-light-dark-label {
   background-color: #1a2238;
   border-color: #304384;
 }
 
 /* Icônes */
-#toggle:checked + .toggle-label .sun {
+#toggle-light-dark:checked + .toggle-light-dark-label .sun {
   opacity: 0;
   transform: translateY(-30px);
 }
 
-#toggle:checked + .toggle-label .moon {
+#toggle-light-dark:checked + .toggle-light-dark-label .moon {
   opacity: 1;
   transform: translateY(0);
   color: #1a2238;
 }
 
 /* Animation au clic */
-.toggle-label:active .circle {
+.toggle-light-dark-label:active .circle {
   width: 45px;
 }
 
