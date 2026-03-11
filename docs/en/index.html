@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio - Accueil</title>
+    <link rel="icon" href="./images/pp lilaj.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js" defer></script>
+  </head>
+  <body id="page-accueil">
+    <header class="entete" id="entete">
+      <img src="../images/pp lilaj.jpg" class="logo" />
+      <h1 class="titre">My Portfolio</h1>
+      <nav class="barre-nav" id="barre-nav">
+        <a href="index.html">
+          <span>Home</span>
+        </a>
+        <a href="formations.html">
+          <span>Education</span>
+        </a>
+        <a href="exp.html">
+          <span>Professionnal Experiences</span>
+        </a>
+        <a href="certifs.html">
+          <span>Certifications</span>
+        </a>
+        <a href="projects.html">
+          <span>Projects</span>
+        </a>
+      </nav>
+      <div class="toggle-buttons" id="toggle-buttons">
+        <input type="checkbox" id="toggle-light-dark" checked />
+        <label for="toggle-light-dark" class="toggle-light-dark-label">
+          <div class="circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="sun"
+            >
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="moon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </label>
+
+        <input type="checkbox" id="toggle-fr-en" checked/>
+        <label for="toggle-fr-en" class="toggle-fr-en-label">
+          <div class="circle">
+            <img src="../images/flag-fr.png" alt="drapeau-fr" class="fr"/>
+            <img src="../images/flag-en.png" alt="drapeau-en" class="en"/>
+          </div>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <hr />
+      <section class="accueil" id="accueil">
+        <div class="infos-photo" id="infos-photo">
+          <div class="infos" id="infos">
+            <h1>Jalil BOUGOFFA--DUPRAT</h1>
+            <h2>Computer Developer</h2>
+            <article class="bio" id="bio">
+              <h3>About me</h3>
+              <p>
+                Admit in a Bachelor 3 Computer Science - Development in Ynov Campus
+                Lyon, I am a great passionnate of video games.
+                <br />
+                I always search to learn the most efficient way
+                to improve my competences and my work.
+              </p>
+            </article>
+          </div>
+          <figure class="accueil" id="photo-jalil">
+            <img
+              src="../images/photo cv.jpg"
+              alt="Photo de Jalil"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+        <div class="reseaux-sociaux" id="reseaux-sociaux">
+          <div class="reseaux-card" id="linkedin">
+            <a
+              href="https://www.linkedin.com/in/jalil-bougoffa-duprat-845b202a0/"
+              target="_blank"
+            >
+              <button>
+                <img
+                  src="../images/LinkedIn.png"
+                  alt="Profil LinkedIn de Jalil"
+                  loading="lazy"
+                />
+                <span>LinkedIn</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="gitHub">
+            <a href="https://github.com/BOU-CIEL1" target="_blank">
+              <button>
+                <img
+                  src="../images/github.png"
+                  alt="Profil GitHub de Jalil"
+                  loading="lazy"
+                />
+                <span>GitHub</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="youTube">
+            <a href="https://www.youtube.com/@lilajofficiel" target="_blank">
+              <button>
+                <img
+                  src="../images/youtube.png"
+                  alt="Chaîne YouTube de Jalil"
+                  loading="lazy"
+                />
+                <span>YouTube</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="instagram">
+            <a
+              href="https://www.instagram.com/lilaj_officiel/#"
+              target="_blank"
+            >
+              <button>
+                <img
+                  src="../images/instagram.png"
+                  alt="Compte Instagram de Jalil"
+                  loading="lazy"
+                />
+                <span>Instagram</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="discord">
+            <a
+              href="https://discord.com/users/817797721146523730"
+              target="_blank"
+            >
+              <button>
+                <img
+                  src="../images/discord.png"
+                  alt="Profil Discord de Jalil"
+                  loading="lazy"
+                />
+                <span>Discord</span>
+              </button>
+            </a>
+          </div>
+          <div class="reseaux-card" id="twitter">
+            <a href="https://x.com/Lilaj_officiel" target="_blank">
+              <button>
+                <img
+                  src="../images/twitter.png"
+                  alt="Compte Twitter/X de Jalil"
+                  loading="lazy"
+                />
+                <span>Twitter</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <br />
+      <hr />
+
+      <section class="competences" id="competences">
+        <h2>My competences</h2>
+        <div class="liste-competences" id="liste-competences">
+          <div class="langages" id="langages">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li id="icon-cpp">C++</li>
+              <li id="icon-csharp">C#</li>
+              <li id="icon-python">Python</li>
+            </ul>
+          </div>
+          <div class="dev-web" id="dev-web">
+            <h3>Web Development</h3>
+            <ul>
+              <li id="icon-html">HTML</li>
+              <li id="icon-css">CSS</li>
+              <li id="icon-js">JavaScript</li>
+              <li id="icon-php">PHP</li>
+              <li id="icon-sql">SQL</li>
+            </ul>
+          </div>
+          <div class="game-dev" id="game-dev">
+            <h3>Game Engines</h3>
+            <ul>
+              <li id="icon-unity">Unity</li>
+              <li id="icon-godot">Godot</li>
+            </ul>
+          </div>
+          <div class="gestion-projet" id="gestion-projet">
+            <h3>Project Management</h3>
+            <ul>
+              <li id="icon-github">GitHub</li>
+              <li id="icon-gitlab">GitLab</li>
+              <li id="icon-docker">Docker</li>
+              <li id="icon-uml">UML</li>
+            </ul>
+          </div>
+          <div class="creation-contenu" id="creation-contenu">
+            <h3>Content Creation</h3>
+            <ul>
+              <li id="icon-premiere-pro">Premiere Pro</li>
+              <li id="icon-photoshop">Photoshop</li>
+            </ul>
+          </div>
+          <div class="langues" id="langues">
+            <h3>Languages</h3>
+            <ul>
+              <li id="icon-fr">French - Native language</li>
+              <li id="icon-en">English - C1</li>
+              <li id="icon-de">German - B2</li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <hr />
+      </section>
+
+      <section class="selected-projects" id="selected-projects">
+        <h2>Selected Projects</h2>
+        <div class="liste-projets" id="liste-projets">
+          <a
+            href="https://github.com/BOU-CIEL1/Spacecheap-Adventures"
+            target="_blank"
+          >
+            <div class="project-card" id="project-card-1">
+              <img
+                src="../images/caption-spacecheap-adventures.png"
+                alt="Image Projet 1"
+              />
+              <h3>Spacecheap Adventures</h3>
+              <p>Godot - GDScript</p>
+              <p>
+                Graded group project for BTS's first year.<br/>
+                We had the choice of create any developement project. We choose
+                to make a videogame.<br/>
+                We made it with Godot because we found interesting to make
+                something original considering that Unity and Unreal Engine are more trendy.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/MAR-CIEL/Projet-gestion_course/tree/Bou"
+            target="_blank"
+          >
+            <div class="project-card" id="project-card-2">
+              <img
+                src="../images/caption-ihm-covaciel.png"
+                alt="Image Projet 2"
+              />
+              <h3>Chronometer and Spectators HMI CoVACIEL Race</h3>
+              <p>C++ - HTML - CSS - JS - PHP</p>
+              <p>
+                Graded group project for BTS's second year.<br/>
+                It was imposed by teachers who have registered us at CoVACIEL
+                competition regrouping all of the French BTS CIEL in autonomous
+                cars races.<br/>
+                My group occupies of managing the race. On my part, I have to
+                conceive the chronometer solution and a HMI which shows informations
+                for spectators.
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/BOU-CIEL1/Stage-Decouverte-Ynov-Trouver-le-Nombre-Mystere"
+            target="_blank"
+          >
+            <div class="project-card" id="project-card-3">
+              <img
+                src="../images/caption-trouve-le-nombre.png"
+                alt="Image Projet 3"
+              />
+              <h3>Game Find Mystery Number</h3>
+              <p>HTML - CSS - JS</p>
+              <p>
+                Project created as part of the discovery internship day organised
+                by Ynov Campus Lyon.<br/>
+                This project has enabled us to learn JavaScript basics.
+                In that game, you have to guess a number randomly generated
+                between 1 and 100 with indications like "too high" or "too low".
+              </p>
+            </div>
+          </a>
+        </div>
+        <br />
+        <hr />
+      </section>
+
+      <section class="selected-courses" id="selected-courses">
+        <h2>Selected Courses</h2>
+        <div class="liste-cours" id="liste-cours">
+          <div class="course-card" id="course-card-1">
+            <img
+              src="../images/unity-junior-programmer.png"
+              alt="Image Cours 1"
+            />
+            <h3>Unity Junior Programmer</h3>
+            <p>
+              More deep learning of Unity's basics functionnalities and on what we can do with the engine.
+            </p>
+          </div>
+          <div class="course-card" id="course-card-2">
+            <img
+              src="../images/Sololearn - Web Development.png"
+              alt="Image Cours 2"
+            />
+            <h3>Sololearn - Web Development</h3>
+            <p>
+              Course learning dev web fullstack's basics with HTML, CSS and JavaScript
+              for the front-end and SQL for the back-end.
+            </p>
+          </div>
+          <div class="course-card" id="course-card-3">
+            <img
+              src="../images/Sololearn - Python Developer.png"
+              alt="Image Cours 3"
+            />
+            <h3>Sololearn - Python Developer</h3>
+            <p>
+              Course learning Python's basics. The more recommended language to learn
+              programmation thanks to its simplicity and its versatility.
+            </p>
+          </div>
+        </div>
+        <br />
+        <hr />
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <span
+          ><a href="tel:+33615804650" target="_blank">My Phone</a></span
+        >
+        <span
+          ><a href="mailto:jalilbougoffa@gmail.com" target="_blank"
+            >My email</a
+          ></span
+        >
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 - Created with 💖 by Jalil BOUGOFFA--DUPRAT</p>
+    </footer>
+  </body>
+</html>
