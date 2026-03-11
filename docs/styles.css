@@ -33,6 +33,7 @@ header {
   padding: 20px;
   background-color: #1d2e62;
   z-index: 1000;
+  border-bottom: solid 2px #304384;
 }
 
 .logo {
@@ -49,8 +50,111 @@ header > nav {
 
 header > nav > a,
 .reseaux-card > a,
-.liste-projets > a, .projets  a {
+.liste-projets > a,
+.projets a {
   text-decoration: none;
+}
+
+header > input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: none;
+  transition: 0.5s;
+}
+
+#toggle {
+  display: none;
+}
+
+/* Le conteneur (le rail du bouton) */
+.toggle-label {
+  width: 80px;
+  height: 40px;
+  background-color: #f3f3f3; /* Couleur sombre par défaut */
+  border: 2px solid #d1d1d1;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  display: block; /* S'assure qu'il est visible */
+}
+
+/* Le cercle qui bouge */
+.circle {
+  width: 32px;
+  height: 32px;
+  background-color: #3e63dd;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.circle svg {
+  width: 20px;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.sun {
+  color: #ffd600;
+  opacity: 1;
+  transform: translateY(0);
+}
+.moon {
+  color: #1a2238;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* --- ETATS QUAND COCHÉ (Light Mode) --- */
+
+/* Déplacement du cercle */
+#toggle:checked + .toggle-label .circle {
+  left: calc(100% - 36px);
+  background-color: #fff;
+}
+
+/* Changement de couleur du rail */
+#toggle:checked + .toggle-label {
+  background-color: #1a2238;
+  border-color: #304384;
+}
+
+/* Icônes */
+#toggle:checked + .toggle-label .sun {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+#toggle:checked + .toggle-label .moon {
+  opacity: 1;
+  transform: translateY(0);
+  color: #1a2238;
+}
+
+/* Animation au clic */
+.toggle-label:active .circle {
+  width: 45px;
+}
+
+body.light-mode {
+  background: linear-gradient(45deg, #e0e0e0, #ffffff);
+  color: #1d2e62;
+}
+body.light-mode header {
+  background-color: #ffffff;
+  border-bottom: solid 2px #d1d1d1;
+}
+body.light-mode a {
+  color: #3e63dd;
 }
 
 /* Page Accueil et Page*/
@@ -167,61 +271,61 @@ button span {
 }
 
 #icon-cpp::before {
-  background-image: url(/images/cpp.svg);
+  background-image: url(images/cpp.svg);
 }
 #icon-csharp::before {
-  background-image: url(/images/c-sharp.svg);
+  background-image: url(images/c-sharp.svg);
 }
 #icon-python::before {
-  background-image: url(/images/python.svg);
+  background-image: url(images/python.svg);
 }
 #icon-html::before {
-  background-image: url(/images/html.svg);
+  background-image: url(images/html.svg);
 }
 #icon-css::before {
-  background-image: url(/images/css.svg);
+  background-image: url(images/css.svg);
 }
 #icon-js::before {
-  background-image: url(/images/javascript.svg);
+  background-image: url(images/javascript.svg);
 }
 #icon-php::before {
-  background-image: url(/images/php.svg);
+  background-image: url(images/php.svg);
 }
 #icon-sql::before {
-  background-image: url(/images/mysql.svg);
+  background-image: url(images/mysql.svg);
 }
 #icon-unity::before {
-  background-image: url(/images/unity.svg);
+  background-image: url(images/unity.svg);
 }
 #icon-godot::before {
-  background-image: url(/images/godot.svg);
+  background-image: url(images/godot.svg);
 }
 #icon-github::before {
-  background-image: url(/images/github.svg);
+  background-image: url(images/github.svg);
 }
 #icon-gitlab::before {
-  background-image: url(/images/gitlab.svg);
+  background-image: url(images/gitlab.svg);
 }
 #icon-docker::before {
-  background-image: url(/images/docker.svg);
+  background-image: url(images/docker.svg);
 }
 #icon-uml::before {
-  background-image: url(/images/uml.svg);
+  background-image: url(images/uml.svg);
 }
 #icon-premiere-pro::before {
-  background-image: url(/images/premiere-pro.svg);
+  background-image: url(images/premiere-pro.svg);
 }
 #icon-photoshop::before {
-  background-image: url(/images/photoshop.svg);
+  background-image: url(images/photoshop.svg);
 }
 #icon-fr::before {
-  background-image: url(/images/flag-fr.png);
+  background-image: url(images/flag-fr.png);
 }
 #icon-en::before {
-  background-image: url(/images/flag-en.png);
+  background-image: url(images/flag-en.png);
 }
 #icon-de::before {
-  background-image: url(/images/flag-de.png);
+  background-image: url(images/flag-de.png);
 }
 
 .liste-projets,
@@ -313,7 +417,7 @@ button span {
   padding: 0px 10px;
 }
 
-.description{
+.description {
   font-size: 0.8rem;
 }
 
