@@ -1,6 +1,32 @@
+:root{
+  --background-1: #11131f;
+  --background-2: #141726;
+  --nav: #1d2e62;
+  --button: #182449;
+  --borders-1: #304384;
+  --borders-2: #3a4f97;
+  --timeline: #435DB1;
+  --text: #5472e4;
+  --links: #9eb1ff;
+  --inside: #3E63DD;
+}
+
+body.light-mode{
+  --background-1: #FDFDFE;
+  --background-2: #F7F9FF;
+  --nav: #E1E9FF;
+  --button: #EDF2FE;
+  --borders-1: #C1D0FF;
+  --borders-2: #ABBDF9;
+  --timeline: #8DA4EF;
+  --text: #3358D4;
+  --links: #1F2D5C;
+  --inside: #3E63DD;
+}
+
 body {
-  background: linear-gradient(45deg, #11131f, #141726);
-  color: #5472e4;
+  background: linear-gradient(45deg, var(--background-1), var(--background-2));
+  color: var(--text);
   font-family: "Inter", "Monsterrat", "Roboto", sans-serif;
 }
 
@@ -21,7 +47,7 @@ p {
 }
 
 a {
-  color: #9eb1ff;
+  color: var(--links);
 }
 
 header {
@@ -31,9 +57,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #1d2e62;
+  background-color: var(--nav);
   z-index: 1000;
-  border-bottom: solid 2px #304384;
+  border-bottom: solid 2px var(--borders-1);
 }
 
 .logo {
@@ -73,24 +99,23 @@ header > input {
   display: none;
 }
 
-/* Le conteneur (le rail du bouton) */
 .toggle-light-dark-label, .toggle-fr-en-label {
   width: 80px;
   height: 40px;
-  background-color: #f3f3f3; /* Couleur sombre par défaut */
-  border: 2px solid #d1d1d1;
+  background-color: var(--button);
+  border: 2px solid var(--borders-1);
   border-radius: 50px;
   cursor: pointer;
   position: relative;
   transition: 0.3s;
-  display: block; /* S'assure qu'il est visible */
+  display: block;
 }
 
 /* Le cercle qui bouge */
 .circle {
   width: 32px;
   height: 32px;
-  background-color: #3e63dd;
+  background-color: var(--inside);
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -125,13 +150,13 @@ header > input {
 /* Déplacement du cercle */
 #toggle-light-dark:checked + .toggle-light-dark-label .circle,  #toggle-fr-en:checked + .toggle-fr-en-label .circle{
   left: calc(100% - 36px);
-  background-color: #fff;
+  background-color: var(--inside);
 }
 
 /* Changement de couleur du rail */
 #toggle-light-dark:checked + .toggle-light-dark-label, #toggle-fr-en:checked + .toggle-fr-en-label {
-  background-color: #1a2238;
-  border-color: #304384;
+  background-color: var(--button);
+  border-color: var(--borders-1);
 }
 
 /* Icônes */
@@ -150,19 +175,6 @@ header > input {
 .toggle-light-dark-label:active .circle, .toggle-fr-en-label:active .circle {
   width: 45px;
 }
-
-body.light-mode {
-  background: linear-gradient(45deg, #e0e0e0, #ffffff);
-  color: #1d2e62;
-}
-body.light-mode header {
-  background-color: #ffffff;
-  border-bottom: solid 2px #d1d1d1;
-}
-body.light-mode a {
-  color: #3e63dd;
-}
-
 /* Page Accueil et Page*/
 
 .accueil {
@@ -218,10 +230,10 @@ button {
   justify-content: center;
   gap: 10px;
   cursor: pointer;
-  border: solid 3px #3a4f97;
+  border: solid 3px var(--borders-2);
   border-radius: 6px;
-  background-color: #3e63dd;
-  color: #9eb1ff;
+  background-color: var(--inside);
+  color: var(--links);
 }
 
 button img {
@@ -355,7 +367,7 @@ button span {
 .projets-card {
   height: 500px;
   width: 500px;
-  border: solid 4px #304384;
+  border: solid 4px var(--borders-1);
   border-radius: 6px;
   margin: 10px;
 }
@@ -399,12 +411,12 @@ button span {
 
 .project-card img,
 .course-card img {
-  border-bottom: solid #304384;
+  border-bottom: solid var(--borders-1);
 }
 
 .certifs-card img,
 .projets-card img {
-  border-top: solid #304384;
+  border-top: solid var(--borders-1);
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -441,7 +453,7 @@ button span {
   line-height: 100%;
   position: relative;
   margin: 0px 0px 0px 20px;
-  border-left: 2px solid #2870bd;
+  border-left: 2px solid var(--timeline);
 }
 
 .job {
@@ -472,8 +484,8 @@ button span {
   top: 40px;
   width: 20px;
   height: 20px;
-  background-color: #2870bd;
-  border: 3px solid #104d87;
+  background-color: var(--inside);
+  border: 3px solid var(--borders-1);
   border-radius: 50%;
   z-index: 1;
 }
