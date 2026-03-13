@@ -26,23 +26,49 @@ toggleLightDark.addEventListener("change", () => {
 //Français - Anglais
 const toggleFrEn = document.getElementById("toggle-fr-en");
 
-toggleFrEn.addEventListener("change", () => {
-  let currentPath = window.location.pathname;
-  let newPath = "";
+const savedLang = localStorage.getItem("language");
+const currentPath = window.location.pathname;
+const isInEnFolder = currentPath.includes("/en/");
 
-  if (toggleFrEn.checked) {
-    if (!currentPath.includes("/en/")) {
-      let fileName = currentPath.substring(currentPath.lastIndexOf("/") + 1);
-      newPath = "./en/" + (fileName || "index.html");
+if (savedLang === "en" && !isInEnFolder) {
+    let fileName = currentPath.substring(currentPath.lastIndexOf("/") + 1) || "index.html";
+    window.location.href = "./en/" + fileName;
+}
+else if (savedLang === "fr" && isInEnFolder) {
+    let fileName = currentPath.substring(currentPath.lastIndexOf("/") + 1) || "index.html";
+    window.location.href = "../" + fileName;
+}
+
+if (toggleFrEn) {
+    // 1. On synchronise le bouton avec l'URL réelle au chargement
+    if (window.location.pathname.includes("/en/")) {
+        toggleFrEn.checked = true;
+    } else {
+        toggleFrEn.checked = false;
     }
-  } else {
-    if (currentPath.includes("/en/")) {
-      newPath = "../" + currentPath.substring(currentPath.lastIndexOf("/") + 1);
-    }
-  }
-  if (newPath !== "") {
-    setTimeout(() => {
-      window.location.href = newPath;
-    }, 300);
-  }
-});
+
+    // 2. On gère le changement au clic
+    toggleFrEn.addEventListener("change", () => {
+        let path = window.location.pathname;
+        let fileName = path.substring(path.lastIndexOf("/") + 1) || "index.html";
+        let newPath = "";
+
+        if (toggleFrEn.checked) {
+            localStorage.setItem("language", "en");
+            if (!path.includes("/en/")) {
+                newPath = "./en/" + fileName;
+            }
+        } else {
+            localStorage.setItem("language", "fr");
+            if (path.includes("/en/")) {
+                newPath = "../" + fileName;
+            }
+        }
+
+        if (newPath !== "") {
+            setTimeout(() => {
+                window.location.href = newPath;
+            }, 300);
+        }
+    });
+}
