@@ -1,5 +1,4 @@
 /*TO DO LIST
-1. Faire un Toggle Button FR - EN (traduire pages Formation, Exp, Certifs, Projets)
 3. Faire des animations rapides
 4. Mettre du focus sur certains éléments
 */
